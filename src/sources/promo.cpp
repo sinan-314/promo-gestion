@@ -15,9 +15,15 @@ promo::~promo()
 {
 }
 
-void promo::addStudent(const Student &eleve)
+void promo::addStudent(const student &eleve)
 {
     student_list.push_back(eleve);
 }
 
+float promo::showMoyenne()
+{
+
+
+    return (0);
+}
 

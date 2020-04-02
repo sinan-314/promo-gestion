@@ -14,10 +14,12 @@ private:
 
     std::string name;
     std::vector<student> student_list;
-    std::vector<float> moyenne_list;
     float moyenne_class;
 
 public:
+    // la parce que je sais pas comment faire
+    std::vector<float> moyenne_list;
+
     // constructeur
     promo(std::string name);
 
@@ -25,7 +27,8 @@ public:
     ~promo();
 
     // autre fonctions
-    void addStudent(const Student &eleve);
+    void addStudent(const student &eleve);
+    float showMoyenne();
 
 };
 

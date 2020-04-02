@@ -4,6 +4,7 @@ student = src/sources/student.cpp
 
 
 build : 
+	clear
 	clang++ -o promo $(main) $(promo) $(student) 
 
 run :

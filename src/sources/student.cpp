@@ -5,6 +5,7 @@
 using namespace std;
 
 #include "../headers/student.h"
+#include "../headers/promo.h"
 
 
 student::student(string name)
@@ -77,5 +78,7 @@ void student::showMark()
 
 int student::getMoyenne()
 {
-    return (moyenne);
+    promo::moyenne_list.pushback(moyenne);
+
+    return (0);
 }
